@@ -1,0 +1,74 @@
+/* #map e golemata mapa (pc), .verticalMap e mobilna mapa, findUsCard */
+.FindUsCard {
+    font-family: Lexend;
+    padding-bottom:0;
+/*    background: rgb(255,225,189);
+    background: linear-gradient(180deg, rgba(255,225,189,1) 0%, rgb(255, 241, 219) 100%, rgb(248, 230, 207) 100%);*/
+}
+#map {
+    margin: auto;
+    overflow: hidden;
+}
+.verticalMap {
+    display: none;
+}
+.mapButtonVerticalShow, .mapButtonVerticalHide {
+    display: none;
+}
+@media (max-width: 768px) {
+    .FindUs img {
+        display: none;
+    }   
+    .FindUsCard {
+        width: 100vw;
+        border-bottom: solid #171717 2px;
+        border-right: none;
+    } 
+    .FindUsCard img {
+        display: block;
+        border-top: solid #171717 2px;
+    }
+    .mapButtonHorizontal {
+        display: none;
+    }
+    .mapButtonVerticalShow, .mapButtonVerticalHide {
+        display: inline;
+    }
+}
+
+@media (min-width: 768px){
+    .FindUsCard:not(.FindUsCard:last-of-type) {
+        border-right: 3px solid #171717;
+    }
+    .FindUsCard {
+        border-bottom: 2px solid #171717;
+    }
+}
+
+#map {
+    overflow: scroll;
+}
+@media (max-width: 867px) {
+    #map {
+        max-height: calc(100vh - 148px - 66px - 144px - 1px);
+    }
+}
+@media (min-width: 868px) {
+    #map {
+        max-height: calc(100vh - 124px - 66px - 144px - 1px);
+    }
+}
+.titleLocations {
+    font-family: RegularFedoka;
+    color: mediumseagreen;
+    text-shadow: 0.1rem 0 0 #171717, 0 -1px 0 #171717, 0 2px 0 #171717, -1px 0 0 #171717;
+}
+
+.mapBtn{
+    position: relative;
+    bottom: 0;
+}
+
+.btnHover:hover{
+    background-color: #7ddea9;
+}

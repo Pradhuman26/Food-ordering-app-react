@@ -1,0 +1,32 @@
+.Cart {
+    margin: auto;
+    max-width: 650px;
+    border: 20px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+}
+.Cart img {
+    height: 75px;
+    padding: 0;
+    border-right: 2px solid black;
+}
+.CartItem {
+    max-width: 650px;
+    margin:auto;
+    border-bottom: solid 2px black;
+}
+.CartItem>* {
+    padding: 0 10px;
+}
+.Cart .button {
+    padding: 5px 15px;
+    border-left: 2px solid black;  
+}
+body {
+    background-color: #FFF;
+    background-size: 180px 180px;
+    background-position: 0 0, 270px 270px;
+    background-image: linear-gradient(45deg, #e0d5c6 25%, transparent 25%, transparent 75%, #e0d5c6 75%, #e0d5c6),
+    linear-gradient(45deg, #e0d5c6 25%, transparent 25%, transparent 75%, #e0d5c6 75%, #e0d5c6);
+
+}

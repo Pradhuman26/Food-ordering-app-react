@@ -1,0 +1,44 @@
+.disabled {
+    pointer-events: none;
+    color: gray;
+}
+
+.cartButton {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    flex: 1;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+#notif { 
+    text-align: center;
+    border: solid #171717 2px;
+    font-family: Lexend;
+    width: 180px;
+    margin: 5px;
+}
+
+.btnHoverRed:hover{
+    background-color: rgb(252, 207, 201);
+}
+
+.btnHoverCart:hover{
+    background-color: rgb(54, 54, 54);
+}
+
+.categoryIcons:last-of-type {
+    border-right: solid #171717 2px;
+    padding: 6px;
+    padding-bottom: 0px;
+}
+
+.categoryIcons:first-of-type {
+    padding-bottom: 2px;
+    padding-top: 4px;
+}

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: "RegularFedoka";
+    src: local("FedokaOne-Regular"),
+    url("/src/fonts/FredokaOne-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Lexend";
+    src: local("Lexend"),
+    url("/src/fonts/LexendDeca-VariableFont_wght.ttf") format("truetype");
+}
+html{
+    scroll-behavior: smooth;
+}
+.minusNavbar {
+    height: calc(100vh - 145px);
+}
+@media (max-width: 600px) {
+    .minusNavbar {
+        height: calc(100vh - 129px);
+    }
+}
